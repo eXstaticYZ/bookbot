@@ -5,7 +5,7 @@ def get_char_counts(book):
     letters = {}
     for char in book:
         letter = char.lower()
-        if char == "\n":
+        if not letter.isalpha():
             pass
         elif letter in letters:
             letters[letter] += 1
